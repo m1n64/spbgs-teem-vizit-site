@@ -9,7 +9,7 @@
   </head>
   <body>
     <nav>
-  <div class="nav-wrapper pink accent-4">
+  <div class="nav-wrapper" id="navbar">
     <a href="#" class="brand-logo">Logo</a>
     <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-large-only"><i class="material-icons">menu</i></a>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -26,10 +26,9 @@
   <li><a href="collapsible.html">JavaScript</a></li>
   </ul>
 
-
-
     <script src="libs/jquery-3.2.1.min.js"></script>
     <script src="libs/material/js/materialize.min.js"></script>
+    <script src="libs/anime.min.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>
