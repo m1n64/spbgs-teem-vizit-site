@@ -21,11 +21,14 @@
   height: 100px;
   /* background-color: #48004e; */
   text-align: center;
+  width: 100%;
 }
 
 .icon-scroll {
   color: #dbdbdb;
   font-size: 100px;
+  font-family: RobotoBold;
+  text-
 }
 
 .icon-scroll:hover {
@@ -41,117 +44,13 @@
   color: rgb(51, 51, 51);
 }
 
-@keyframes scrollnothover {
-  0% {
-    font-size: 120px;
-  }
-  100% {
-    font-size: 100px;
-  }
-}
 
-@keyframes scrollhover {
-  0% {
-    font-size: 100px;
-  }
-  50% {
-    font-size: 120px;
-  }
-  100% {
-    font-size: 100px;
-  }
-}
 /* @media screen and (max-device-width: 600px) {
   .glitch {
     width: 10%;
   }
 } */
 
-@keyframes noise-anim {
-  0% {
-    clip: rect(50px, 9999px, 16px, 0);
-  }
-
-  5% {
-    clip: rect(71px, 9999px, 80px, 0);
-  }
-
-  10% {
-    clip: rect(56px, 9999px, 6px, 0);
-  }
-
-  15% {
-    clip: rect(27px, 9999px, 86px, 0);
-  }
-
-  20% {
-    clip: rect(63px, 9999px, 72px, 0);
-  }
-
-  25% {
-    clip: rect(40px, 9999px, 81px, 0);
-  }
-
-  30% {
-    clip: rect(94px, 9999px, 31px, 0);
-  }
-
-  35% {
-    clip: rect(37px, 9999px, 99px, 0);
-  }
-
-  40% {
-    clip: rect(32px, 9999px, 16px, 0);
-  }
-
-  45% {
-    clip: rect(28px, 9999px, 70px, 0);
-  }
-
-  50% {
-    clip: rect(57px, 9999px, 38px, 0);
-  }
-
-  55% {
-    clip: rect(74px, 9999px, 17px, 0);
-  }
-
-  60% {
-    clip: rect(51px, 9999px, 31px, 0);
-  }
-
-  65% {
-    clip: rect(46px, 9999px, 42px, 0);
-  }
-
-  70% {
-    clip: rect(95px, 9999px, 57px, 0);
-  }
-
-  75% {
-    clip: rect(53px, 9999px, 31px, 0);
-  }
-
-  80% {
-    clip: rect(90px, 9999px, 57px, 0);
-  }
-
-  85% {
-    clip: rect(95px, 9999px, 31px, 0);
-  }
-
-  90% {
-    clip: rect(17px, 9999px, 40px, 0);
-  }
-
-  95% {
-    clip: rect(85px, 9999px, 66px, 0);
-  }
-
-  100% {
-    clip: rect(86px, 9999px, 37px, 0);
-  }
-}
 
 .glitch:after {
   content: attr(data-text);
@@ -166,91 +65,6 @@
   animation: noise-anim 2s infinite linear alternate-reverse;
 }
 
-@keyframes noise-anim-2 {
-  0% {
-    clip: rect(46px, 9999px, 85px, 0);
-  }
-
-  5% {
-    clip: rect(64px, 9999px, 93px, 0);
-  }
-
-  10% {
-    clip: rect(93px, 9999px, 7px, 0);
-  }
-
-  15% {
-    clip: rect(38px, 9999px, 20px, 0);
-  }
-
-  20% {
-    clip: rect(36px, 9999px, 54px, 0);
-  }
-
-  25% {
-    clip: rect(58px, 9999px, 86px, 0);
-  }
-
-  30% {
-    clip: rect(100px, 9999px, 75px, 0);
-  }
-
-  35% {
-    clip: rect(99px, 9999px, 82px, 0);
-  }
-
-  40% {
-    clip: rect(99px, 9999px, 79px, 0);
-  }
-
-  45% {
-    clip: rect(37px, 9999px, 39px, 0);
-  }
-
-  50% {
-    clip: rect(42px, 9999px, 43px, 0);
-  }
-
-  55% {
-    clip: rect(40px, 9999px, 75px, 0);
-  }
-
-  60% {
-    clip: rect(44px, 9999px, 23px, 0);
-  }
-
-  65% {
-    clip: rect(48px, 9999px, 13px, 0);
-  }
-
-  70% {
-    clip: rect(17px, 9999px, 38px, 0);
-  }
-
-  75% {
-    clip: rect(52px, 9999px, 49px, 0);
-  }
-
-  80% {
-    clip: rect(59px, 9999px, 50px, 0);
-  }
-
-  85% {
-    clip: rect(2px, 9999px, 17px, 0);
-  }
-
-  90% {
-    clip: rect(35px, 9999px, 60px, 0);
-  }
-
-  95% {
-    clip: rect(92px, 9999px, 96px, 0);
-  }
-
-  100% {
-    clip: rect(52px, 9999px, 81px, 0);
-  }
-}
 
 .glitch:before {
   content: attr(data-text);
@@ -263,4 +77,57 @@
   overflow: hidden;
   clip: rect(0, 900px, 0, 0);
   animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+.row {
+  text-align: center;
+}
+
+#content-scroll {
+  opacity: 0;
+}
+
+.card-content {
+  padding-top: 5%;
+  padding-bottom: 100px;
+}
+
+.card-head {
+  padding-bottom: 100px;
+}
+
+.card-icon {
+  padding-right: 20px;
+  color: #7d006d;
+  font-size: 50px;
+}
+
+.card-name {
+  font-size: 50px;
+  color: #ffffff;
+  font-family: RobotoBold;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+
+.card-name:hover {
+  text-decoration: line-through;
+  text-decoration-color: #3d0042;
+  cursor: default;
+}
+
+.card-text {
+  color: #ffffff;
+  text-align: right;
+  text-transform: uppercase;
+  font-family: RobotoBold;
+}
+
+
+
+#card1 {
+  background-image: url('../img/kir.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
