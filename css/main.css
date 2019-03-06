@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  src: url('./fonts/ZCOOLQingKeHuangYou-Regular.ttf');
+  font-family: 'Varela';
+}
+
+body {
+  background-color: rgb(24, 24, 24);
+  overflow:  hidden;
+}
