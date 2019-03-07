@@ -1,0 +1,22 @@
+{
+  "card1": {
+    "name": "Kirill Sakharov",
+    "desc": "Back-End Developer in team. Sometimes designer."
+  },
+  "card2": {
+    "name": "Stas Pikuza",
+    "desc": "Designer and Front-End Developer. Work with Bootsrtap and Materializecss."
+  },
+  "card3": {
+    "name": "Nikita Purh",
+    "desc": "Logo designer. Work with Adobe Photoshop, Adobe Illustrator."
+  },
+  "card4": {
+    "name": "Anton Bulenkov",
+    "desc": "Artist, designer, video editing. Work with Adobe Photoshop, Sony Vegas Pro."
+  },
+  "card5": {
+    "name": "Alena Zavatskaya",
+    "desc": "Best team leader and mastermind in our team."
+  }
+}
