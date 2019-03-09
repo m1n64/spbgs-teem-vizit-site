@@ -3,15 +3,15 @@
 
   $lang = [];
 
-  if (isset($_COOKIE['lang'])){
-    $lang = getLang($_COOKIE['lang']);
-  }
-  else {
-    $lang = getLang($lng);
+  if (isset($_COOKIE['lang'])) {
+      $lang = getLang($_COOKIE['lang']);
+  } else {
+      $lang = getLang($lng);
   }
 
-  function getLang($lng){
-    switch($lng) {
+  function getLang($lng)
+  {
+      switch ($lng) {
       default:
       case "eng":
         return json_decode(file_get_contents("{$_SERVER['DOCUMENT_ROOT']}/langs/en_EN.json"));
@@ -31,11 +31,13 @@
     <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
     <!-- <link rel="stylesheet" href="libs/material/css/materialize.min.css"> -->
     <link rel="stylesheet" href="libs/bootsrtap-grid/css/bootstrap-grid.min.css">
+    <link rel="shortcut icon" href="pic/brick128.png" type="image/x-png">
     <!-- <link rel="stylesheet" href="libs/scrollbar/perfect-scrollbar.css"> -->
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/fonts/style.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/index.css">
+
   </head>
   <body>
     <div class="navbar">
@@ -49,7 +51,10 @@
     </div>
 
     <div id="content-scroll">
-      <div class="row">
+      <div class="name-team">
+        <span class="team-text"><?php echo $lang->teamname; ?></span>
+      </div>
+      <div class="row row-team">
         <div class="col-sm-12 col-md-6 col-lg-4">
           <div class="card-content" id="card1">
             <div class="card-head"><span class="card-icon icon-embed"></span><span class="card-name"><?php echo $lang->card1->name; ?></span></div>
@@ -95,96 +100,114 @@
             </div>
         </div>
     </div>
+    <div class="col-sm-12 col-md-6 col-lg-4">
+      <!-- <div class="card-content" id="card6">
+        <div class="card-head"><span class="card-icon icon-fire red"></span><span class="card-name"><?php echo $lang->card6->name; ?></span></div>
+        <div><span class="card-text"><?php echo $lang->card6->desc; ?></span></div>
+        <div class="card-links">
+          <a href="#" class="vk"><span class="icon-vk"></span> VK</a>
+        </div>
+    </div> -->
+    </div>
+  </div>
 </div>
 
-<!-- экономика
-технико-экономическое обоснование. Внедрение программы "Информационно-справочная система по программе Adobe Dreamweaver"
+<div class="sites" id="project-list">
+  <div class="name-team">
+    <span class="team-text"><?php echo $lang->projectname; ?></span>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-4">
+      <div class="card-content" id="project1">
+        <div class="card-head"><span class="card-icon icon-fire"></span><span class="card-name"><?php echo $lang->pr1->name; ?></span></div>
+        <div><span class="card-text"><?php echo $lang->pr1->desc; ?></span></div>
+        <div class="card-links">
+          <a href="#" class="vk"><span class="icon-logo"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span><span class="path18"></span><span class="path19"></span><span class="path20"></span></span> LINK</a>
+        </div>
+    </div>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-4">
 
-Введение:
-Значение автоматизации в жизни общества
-Цель: получение практических навыков по расчёту экономических показателей разработки программы, а так же закрепление теоретических знаний, полученных в ходе изучение дисцпилины "Экномоика организаций"
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-4">
 
-1. Экономически обосновать постановку задач
-2. Определить трудоёмкость разработчки программы
-3. Определить затраты на разработку ПО
-4. Определить свободно отпускную цену программы
+    </div>
+  </div>
+</div>
 
-3 главы.
-список источников.
--->
+<div id="get-site">
+  <div class="name-team">
+    <span class="team-text"><?php echo $lang->form->name; ?></span>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-lg-6">
+      <div class="form-card">
+        <div>
+          <div class="form-text"><?php echo $lang->form->inp1->text; ?></div>
+          <input type="text" id="name-user"/>
+        </div>
+        <div>
+          <div class="form-text"><?php echo $lang->form->inp2->text; ?></div>
+          <input type="email" id="email-user"/>
+        </div>
+        <!-- <div class="form-text"><?php echo $lang->form->select->text; ?></div> -->
+        <div class="select">
+	         <a class="slct"><?php echo $lang->form->select->text; ?></a>
+	           <ul class="drop">
+               <?php for ($i = 0; $i < count($lang->form->select->drop); $i++) {
+    ?>
+		             <li><?php echo $lang->form->select->drop[$i]; ?></li>
+               <?php
+} ?>
+	           </ul>
+	         <input type="hidden" id="select" />
+        </div>
+        <div>
+          <div class="form-text"><?php echo $lang->form->txtarea->text; ?></div>
+          <textarea class="txtar" id="desc-user"></textarea>
+        </div>
+        <div>
+          <button type="button" class="submit" id="order"><?php echo $lang->form->button; ?></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
-<p>1</p>
+<div id="footer">
+  <div class="footer-content">
+    <div class="footer-text">
+      <span><?php echo $lang->footer->main; ?></span>
+    </div>
+    <div class="footer-copyright">
+      <div>2019. (C) <span class="icon-logo"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span><span class="path18"></span><span class="path19"></span><span class="path20"></span></span> BRICK.
+      <?php echo $lang->footer->copy; ?></div>
+    </div>
+  </div>
+</div>
 
-<div id="scrolldown"></div>
-    <script src="libs/jquery-3.2.1.min.js"></script>
-    <script src="libs/bootsrtap-grid/js/bootstrap.min.js"></script>
-    <!-- <script src="libs/scrollbar/perfect-scrollbar.min.js"></script> -->
-    <!-- <script src="libs/material/js/materialize.min.js"></script> -->
-    <script src="libs/anime.min.js"></script>
-    <script src="js/functions.js"></script>
-    <script src="js/index.js"></script>
+<div id="wrapper-error">
+  <div class="modal-error">
+    <div class="content-error">
+      <p><?php echo $lang->form->error; ?></p>
+    </div>
+  </div>
+
+  <div id="wrapper-ok">
+    <div class="modal-ok">
+      <div class="content-ok">
+        <p><?php echo $lang->form->alert; ?></p>
+      </div>
+    </div>
+
+  <script src="libs/jquery-3.2.1.min.js"></script>
+  <script src="libs/bootsrtap-grid/js/bootstrap.min.js"></script>
+  <!-- <script src="libs/scrollbar/perfect-scrollbar.min.js"></script> -->
+  <!-- <script src="libs/material/js/materialize.min.js"></script> -->
+  <script src="libs/jquery.viewportchecker.min.js"></script>
+  <script src="libs/anime.min.js"></script>
+  <script src="js/functions.js"></script>
+  <script src="js/index.js"></script>
+
   </body>
 </html>

@@ -1,5 +1,5 @@
 Options All -Indexes
-<FilesMatch ".(log)$">
+<FilesMatch ".(info)$">
  Order Allow,Deny
  Deny from all
 </FilesMatch>

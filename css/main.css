@@ -24,10 +24,125 @@ body {
   overflow-x: hidden;
 }
 ::-webkit-scrollbar {
-    width: 7px;  /* remove scrollbar space */
-    background: transparent;  /* optional: just make scrollbar invisible */
+    width: 7px;
+    background: transparent;
 }
-/* optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
     animation: 10s scrollAnim infinite;
+}
+
+.animShow {
+  animation: 1s animVisible;
+  animation-fill-mode: both;
+}
+
+.animHide {
+  animation: 1s animInvisible;
+  animation-fill-mode: both;
+
+}
+
+input {
+	width: 300px;
+	font-size: 13px;
+	padding: 6px 0 4px 10px;
+	border: 1px solid #57003e;
+	background: #7e7e7e;
+	border-radius: 8px;
+	font-family: RobotoBold;
+}
+
+/*	=	Select */
+.slct {
+	display: block;
+	border-radius: 5px;
+	border: 1px solid #57003e;
+	background-color: #7e7e7e;
+	width: 285px;
+	padding: 4px 15px 4px 10px;
+	color: #ededed;
+	background-position: 290px -145px;
+	font-family: RobotoBold;
+	cursor: pointer;
+
+
+	/*
+		Супер финт обрезаем текст
+		чтобы не вылезал за рамку
+	*/
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+
+}
+.slct.active {
+	border-radius: 5px 5px 0 0;
+	border-bottom: none;
+}
+.drop {
+	margin: 0;
+	padding: 0;
+	width: 310px;
+	border: 1px solid #2a0022;
+	border-top: none;
+	display: none;
+	position: absolute;
+	background:  #7e7e7e;
+	cursor: pointer;
+
+}
+.drop li {
+	list-style: none;
+	border-top: 1px solid #2a0022;
+	cursor: pointer;
+	display: block;
+	color: #444;
+	padding: 4px 15px 4px 25px;
+	background-position: 10px -119px;
+	color: rgb(235, 235, 235);
+	font-family: RobotoBold;
+
+}
+.drop li:hover {
+	background-color: #e8e8e8;
+	color: #323232;
+}
+.submit {
+	cursor: pointer;
+	border: 2px solid #2a0022;
+	background: #7e7e7e;
+	/* box-shadow: inset 0px 20px 20px #ffffff; */
+	border-radius: 8px;
+	padding: 8px 14px;
+	color: #FFFFFF;
+	/* width: 120px; */
+	font-family: RobotoBold;
+	text-transform: uppercase;
+
+}
+.submit:hover {
+	box-shadow: inset 0px -20px 20px #7e7e7e;
+}
+.submit:active {
+	margin-top: 1px;
+	margin-bottom: -1px;
+	zoom: 1;
+}
+
+textarea {
+	/* = Убираем скролл */
+	overflow: auto;
+
+	/* = Убираем увеличение */
+	resize: none;
+	width: 300px;
+	height: 100px;
+
+	/* = Добавим фон, рамку, отступ*/
+	background: #7e7e7e;
+	border: 1px solid #2a0022;
+	border-radius: 8px;
+	padding: 8px 0 8px 10px;
+	/* cursor: pointer; */
 }
