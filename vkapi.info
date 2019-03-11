@@ -1,0 +1,8 @@
+https://oauth.vk.com/authorize?client_id=6891830&display=page&redirect_uri=&scope=friends,status,wall,notify,notifications&response_type=token&v=5.52
+https://oauth.vk.com/blank.html#access_token=965aebecd6f1fa19eca429b5083e6143b460a7140d73d819293e5345b0cff469d62cb92790b356245aeed&expires_in=86400&user_id=535058076
+<!-- 965aebecd6f1fa19eca429b5083e6143b460a7140d73d819293e5345b0cff469d62cb92790b356245aeed -->
+
+
+https://oauth.vk.com/authorize?client_id=6891897&display=page&redirect_uri=&scope=friends,status,wall,notify,notifications&response_type=token&v=5.52
+https://api.vk.com/method/notifications.sendMessage?user_ids=535058076&message=тест&fragment=hcWNQc8prIfYtODmY6zy&access_token=51dfc40a51dfc40a51dfc40a5151b6ed72551df51dfc40a0d5d30e0122714d88b539e68&v=5.52
+https://oauth.vk.com/authorize?client_id=6891889&display=page&redirect_uri=&scope=friends&response_type=code&v=5.92

@@ -1,4 +1,6 @@
 {
+  "title": "BRICK | PORTFOLIO",
+  "teamname": "Our team:",
   "card1": {
     "name": "Kirill Sakharov",
     "desc": "Back-End Developer in team. Sometimes designer."
@@ -13,10 +15,38 @@
   },
   "card4": {
     "name": "Anton Bulenkov",
-    "desc": "Artist, designer, video editing. Work with Adobe Photoshop, Sony Vegas Pro."
+    "desc": "Artist, designer, video editing. Work with Adobe Photoshop, Adobe Illustrator, Sony Vegas Pro."
   },
   "card5": {
     "name": "Alena Zavatskaya",
     "desc": "Best team leader and mastermind in our team."
-  }
+  },
+  "projectname": "Our projects:",
+  "pr1": {
+    "name": "FindYourself",
+    "desc": "This web-site help You to find self in your life"
+  },
+    "form": {
+      "name": "To order, fill out the form below:",
+      "inp1": {
+        "text": "Enter your name:"
+      },
+      "inp2": {
+        "text": "Enter your E-mail:"
+      },
+      "txtarea": {
+        "text": "Enter your requirements:"
+      },
+      "select": {
+        "text": "What do you want to order?",
+        "drop": ["Site / Landing", "Logo", "Design / Layout of something"]
+      },
+      "button": "To order",
+      "alert": "Thank! For more details, we will contact you by E-mail!",
+      "error": "Error! Check fields and fix it!"
+    },
+    "footer": {
+      "main": "We are engaged in the development of websites and web applications. For complaints or recommendations write to the mail:",
+      "copy": "All rights reserved!"
+    }
 }
