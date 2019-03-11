@@ -1,4 +1,5 @@
 {
+  "title": "BRICK | PORTFOLIO",
   "teamname": "Our team:",
   "card1": {
     "name": "Kirill Sakharov",
@@ -45,7 +46,7 @@
       "error": "Error! Check fields and fix it!"
     },
     "footer": {
-      "main": "We are engaged in the development of websites and web applications. For complaints or recommendations write to the mail: spbgofficial@gmail.com",
+      "main": "We are engaged in the development of websites and web applications. For complaints or recommendations write to the mail:",
       "copy": "All rights reserved!"
     }
 }

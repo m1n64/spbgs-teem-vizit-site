@@ -23,14 +23,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <base href="<?php echo $_SERVER['REQUEST_SCHEME'] . '://' .$_SERVER['SERVER_NAME'].'/';  ?>" />
+    <base href="<?php echo stripos($_SERVER['SERVER_PROTOCOL'],'https') === true ? 'https://' : 'http://' . $_SERVER['SERVER_NAME'].'/';  ?>" />
     <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta name="theme-color" content="#202020">
-    <title>BRICK TEAM | Portfolio</title>
+    <meta name="yandex-tableau-widget" content="logo=pic/brick128.png, color=#202020" />
+    <title><?php echo $lang->title; ?></title>
 
     <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
     <!-- <link rel="stylesheet" href="libs/material/css/materialize.min.css"> -->
     <link rel="stylesheet" href="libs/bootsrtap-grid/css/bootstrap-grid.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
     <link rel="shortcut icon" href="pic/brick128.png" type="image/x-png">
     <!-- <link rel="stylesheet" href="libs/scrollbar/perfect-scrollbar.css"> -->
     <link rel="stylesheet" href="css/animations.css">
@@ -40,6 +43,7 @@
 
   </head>
   <body>
+    <div id="scrolltop"></div>
     <div class="navbar">
       <div class="glitch" data-text="BRICK">BRICK</div>
       <!-- <div class="glitch mini" data-text="TEAM">TEAM</div> -->
@@ -54,8 +58,9 @@
       <div class="name-team">
         <span class="team-text"><?php echo $lang->teamname; ?></span>
       </div>
+      <div class="container-fluide">
       <div class="row row-team">
-        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 card-mg">
           <div class="card-content" id="card1">
             <div class="card-head"><span class="card-icon icon-embed"></span><span class="card-name"><?php echo $lang->card1->name; ?></span></div>
             <div><span class="card-text"><?php echo $lang->card1->desc; ?></span></div>
@@ -64,7 +69,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 card-mg">
           <div class="card-content" id="card2">
             <div class="card-head"><span class="card-icon icon-laptop"></span><span class="card-name"><?php echo $lang->card2->name; ?></span></div>
             <div><span class="card-text"><?php echo $lang->card2->desc; ?></span></div>
@@ -73,7 +78,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 card-mg">
           <div class="card-content" id="card3">
             <div class="card-head"><span class="card-icon icon-power"></span><span class="card-name"><?php echo $lang->card3->name; ?></span></div>
             <div><span class="card-text"><?php echo $lang->card3->desc; ?></span></div>
@@ -82,7 +87,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 card-mg">
           <div class="card-content" id="card4">
             <div class="card-head"><span class="card-icon icon-pencil2"></span><span class="card-name"><?php echo $lang->card4->name; ?></span></div>
             <div><span class="card-text"><?php echo $lang->card4->desc; ?></span></div>
@@ -91,7 +96,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 card-mg">
           <div class="card-content" id="card5">
             <div class="card-head"><span class="card-icon icon-fire red"></span><span class="card-name"><?php echo $lang->card5->name; ?></span></div>
             <div><span class="card-text"><?php echo $lang->card5->desc; ?></span></div>
@@ -100,7 +105,7 @@
             </div>
         </div>
     </div>
-    <div class="col-sm-12 col-md-6 col-lg-4">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 card-mg">
       <!-- <div class="card-content" id="card6">
         <div class="card-head"><span class="card-icon icon-fire red"></span><span class="card-name"><?php echo $lang->card6->name; ?></span></div>
         <div><span class="card-text"><?php echo $lang->card6->desc; ?></span></div>
@@ -112,12 +117,15 @@
   </div>
 </div>
 
+</div>
+
+
 <div class="sites" id="project-list">
   <div class="name-team">
     <span class="team-text"><?php echo $lang->projectname; ?></span>
   </div>
   <div class="row">
-    <div class="col-sm-12 col-md-6 col-lg-4">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 card-mg">
       <div class="card-content" id="project1">
         <div class="card-head"><span class="card-icon icon-fire"></span><span class="card-name"><?php echo $lang->pr1->name; ?></span></div>
         <div><span class="card-text"><?php echo $lang->pr1->desc; ?></span></div>
@@ -126,10 +134,10 @@
         </div>
     </div>
     </div>
-    <div class="col-sm-12 col-md-6 col-lg-4">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 card-mg">
 
     </div>
-    <div class="col-sm-12 col-md-6 col-lg-4">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 card-mg">
 
     </div>
   </div>
@@ -177,7 +185,7 @@
 <div id="footer">
   <div class="footer-content">
     <div class="footer-text">
-      <span><?php echo $lang->footer->main; ?></span>
+      <span><?php echo $lang->footer->main; ?><a href="mailto:support@brickweb.ru">support@brickweb.ru</a></span>
     </div>
     <div class="footer-copyright">
       <div>2019. (C) <span class="icon-logo"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span><span class="path18"></span><span class="path19"></span><span class="path20"></span></span> BRICK.
@@ -206,8 +214,23 @@
   <!-- <script src="libs/material/js/materialize.min.js"></script> -->
   <script src="libs/jquery.viewportchecker.min.js"></script>
   <script src="libs/anime.min.js"></script>
+  <script src="libs/base64.js"></script>
   <script src="js/functions.js"></script>
   <script src="js/index.js"></script>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+     m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-  </body>
+     ym(52717228, "init", {
+          clickmap:true,
+          trackLinks:true,
+          accurateTrackBounce:true,
+          webvisor:true,
+          trackHash:true
+     });
+  </script>
+  <!-- /Yandex.Metrika counter -->
+</body>
 </html>

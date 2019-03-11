@@ -3,10 +3,10 @@
   padding: 0;
 }
 
-@font-face {
+/* @font-face {
   src: url('./fonts/ZCOOLQingKeHuangYou-Regular.ttf');
   font-family: 'Varela';
-}
+} */
 
 @font-face {
   src: url('./fonts/Rubik-Bold.ttf');
@@ -22,6 +22,8 @@ body {
   background-color: rgb(24, 24, 24);
   overflow: hidden;
   overflow-x: hidden;
+	/* background-image: url(http://api.thumbr.it/whitenoise-361x370.png?background=000000ff&noise=ffffff&density=61&opacity=20);
+	animation: noise 0.3s infinite; */
 }
 ::-webkit-scrollbar {
     width: 7px;
@@ -145,4 +147,8 @@ textarea {
 	border-radius: 8px;
 	padding: 8px 0 8px 10px;
 	/* cursor: pointer; */
+}
+
+body::selection, p::selection, div::selection, a::selection, span::selection {
+	background-color: rgba(116, 0, 0, 0.5);
 }

@@ -1,10 +1,14 @@
 (function() {
   // $('.sidenav').sidenav();
   //
+  $(window).on("load", function(){
+    $('body').css("overflow", "scroll").css("overflow-x", "hidden");
+    $('body, html').animate({
+      scrollTop: 0
+    }, 500);
+    $('body').css("overflow", "hidden");
+  });
 
-  $('html, body').animate({
-    scrollTop: 0
-  }, 100);
 
   anime({
     targets: ".divider-scroll",
@@ -22,7 +26,7 @@
     $('html, body').animate({
       scrollTop: $(`${sc}`).offset().top
     }, 500);
-    $('body').css("overflow", "scroll").css("overflow-x", "hidden");
+    $('body').css("overflow", "scroll").css("overflow-x", "hidden");//.css("background-image", "none").css("animation", "none");
   });
 
   $(".lang_name").click(function() {
@@ -88,7 +92,8 @@
   var params = {
     id_group: "-179401734",
     id_user: "535058076",
-    token: "965aebecd6f1fa19eca429b5083e6143b460a7140d73d819293e5345b0cff469d62cb92790b356245aeed"
+    token: "79f3224391956046b80fab5078d861198afcc018a117dfb00acefe076498f8c79299d16ef4dfdbe162d10",
+    pages: ["id94947434#Алёна", "spikuza#Стас", "pyrkh1#Никита", "powerofstrike#Антон", "spbg_grib#Иван"]
   }
 
   $("#order").click(function(){
@@ -104,7 +109,14 @@
     }
 
     let id = params.id_group;
-    let text = `Поступил заказ от ${$name.val()}. E-MAIL: ${$email.val()}. Выбранная услуга: ${$select.val()}. Его пожелания: ${$desc.val()}.`;
+
+    let users = "";
+    params.pages.forEach((el)=>{
+      let spl = el.split('#');
+      users += `*${spl[0]} (${spl[1]}) `;
+    });
+
+    let text = `Поступил заказ от ${$name.val()}. \nE-MAIL: ${$email.val()}. \nВыбранная услуга: ${$select.val()}. \nЕго пожелания: ${$desc.val()}. \n${users}`;
 
     let api_text = `https://api.vk.com/method/wall.post?owner_id=${id}&message=${text}&access_token=${params.token}&v=5.52`;
 
@@ -120,6 +132,13 @@
         $desc.val('');
       }
     });
+
+    $.post(
+      location.protocol+"//"+location.host+"/ajax/mailto.ajax.php",
+      {
+        mail: base64_encode($email.val())
+      }
+    );
 
   });
 
