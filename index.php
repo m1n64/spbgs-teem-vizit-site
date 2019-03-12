@@ -25,14 +25,15 @@
   <head>
     <base href="<?php echo stripos($_SERVER['SERVER_PROTOCOL'],'https') === true ? 'https://' : 'http://' . $_SERVER['SERVER_NAME'].'/';  ?>" />
     <meta charset="utf-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#202020">
     <meta name="yandex-tableau-widget" content="logo=pic/brick128.png, color=#202020" />
+
     <title><?php echo $lang->title; ?></title>
 
     <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
     <!-- <link rel="stylesheet" href="libs/material/css/materialize.min.css"> -->
-    <link rel="stylesheet" href="libs/bootsrtap-grid/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="libs/material-grid/materializecss-grid.min.css">
     <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
     <link rel="shortcut icon" href="pic/brick128.png" type="image/x-png">
     <!-- <link rel="stylesheet" href="libs/scrollbar/perfect-scrollbar.css"> -->
@@ -45,7 +46,13 @@
   <body>
     <div id="scrolltop"></div>
     <div class="navbar">
-      <div class="glitch" data-text="BRICK">BRICK</div>
+      <div class="container">
+        <div class="row">
+          <div class="col s6 m6 l6 offset-l4 offset-m4 offset-l4 center-align valign-wrapper">
+            <div class="glitch" data-text="BRICK">BRICK</div>
+          </div>
+        </div>
+      </div>
       <!-- <div class="glitch mini" data-text="TEAM">TEAM</div> -->
     </div>
     <div class="divider-scroll"><span class="icon-scroll" for="#content-scroll" id="main-scroll"></span></div>
@@ -58,9 +65,9 @@
       <div class="name-team">
         <span class="team-text"><?php echo $lang->teamname; ?></span>
       </div>
-      <div class="container-fluide">
+      <!-- <div class="container-fluide"> -->
       <div class="row row-team">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 card-mg">
+        <div class="col s12 m6 l4 card-mg">
           <div class="card-content" id="card1">
             <div class="card-head"><span class="card-icon icon-embed"></span><span class="card-name"><?php echo $lang->card1->name; ?></span></div>
             <div><span class="card-text"><?php echo $lang->card1->desc; ?></span></div>
@@ -69,7 +76,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 card-mg">
+        <div class="col s12 m6 l4 card-mg">
           <div class="card-content" id="card2">
             <div class="card-head"><span class="card-icon icon-laptop"></span><span class="card-name"><?php echo $lang->card2->name; ?></span></div>
             <div><span class="card-text"><?php echo $lang->card2->desc; ?></span></div>
@@ -78,7 +85,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 card-mg">
+        <div class="col s12 m6 l4 card-mg">
           <div class="card-content" id="card3">
             <div class="card-head"><span class="card-icon icon-power"></span><span class="card-name"><?php echo $lang->card3->name; ?></span></div>
             <div><span class="card-text"><?php echo $lang->card3->desc; ?></span></div>
@@ -87,7 +94,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 card-mg">
+        <div class="col s12 m6 l4 card-mg">
           <div class="card-content" id="card4">
             <div class="card-head"><span class="card-icon icon-pencil2"></span><span class="card-name"><?php echo $lang->card4->name; ?></span></div>
             <div><span class="card-text"><?php echo $lang->card4->desc; ?></span></div>
@@ -96,7 +103,7 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 card-mg">
+        <div class="col s12 m6 l4 card-mg">
           <div class="card-content" id="card5">
             <div class="card-head"><span class="card-icon icon-fire red"></span><span class="card-name"><?php echo $lang->card5->name; ?></span></div>
             <div><span class="card-text"><?php echo $lang->card5->desc; ?></span></div>
@@ -105,7 +112,7 @@
             </div>
         </div>
     </div>
-    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 card-mg">
+    <div class="col s12 m6 l4 card-mg">
       <!-- <div class="card-content" id="card6">
         <div class="card-head"><span class="card-icon icon-fire red"></span><span class="card-name"><?php echo $lang->card6->name; ?></span></div>
         <div><span class="card-text"><?php echo $lang->card6->desc; ?></span></div>
@@ -114,7 +121,7 @@
         </div>
     </div> -->
     </div>
-  </div>
+  <!-- </div> -->
 </div>
 
 </div>
@@ -125,7 +132,7 @@
     <span class="team-text"><?php echo $lang->projectname; ?></span>
   </div>
   <div class="row">
-    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 card-mg">
+    <div class="col s12 m6 l4 card-mg">
       <div class="card-content" id="project1">
         <div class="card-head"><span class="card-icon icon-fire"></span><span class="card-name"><?php echo $lang->pr1->name; ?></span></div>
         <div><span class="card-text"><?php echo $lang->pr1->desc; ?></span></div>
@@ -134,10 +141,10 @@
         </div>
     </div>
     </div>
-    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 card-mg">
+    <div class="col s12 m6 l4 card-mg">
 
     </div>
-    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4 card-mg">
+    <div class="col s12 m6 l4 card-mg">
 
     </div>
   </div>
@@ -147,36 +154,49 @@
   <div class="name-team">
     <span class="team-text"><?php echo $lang->form->name; ?></span>
   </div>
-  <div class="row justify-content-center">
-    <div class="col-lg-6">
-      <div class="form-card">
-        <div>
-          <div class="form-text"><?php echo $lang->form->inp1->text; ?></div>
-          <input type="text" id="name-user"/>
-        </div>
-        <div>
-          <div class="form-text"><?php echo $lang->form->inp2->text; ?></div>
-          <input type="email" id="email-user"/>
-        </div>
-        <!-- <div class="form-text"><?php echo $lang->form->select->text; ?></div> -->
-        <div class="select">
-	         <a class="slct"><?php echo $lang->form->select->text; ?></a>
-	           <ul class="drop">
-               <?php for ($i = 0; $i < count($lang->form->select->drop); $i++) {
-    ?>
-		             <li><?php echo $lang->form->select->drop[$i]; ?></li>
-               <?php
+
+  <!-- <div class="row">
+    <div class="col l4"><span class="icon-landing"></span><?php echo $lang->form->lend; ?></div>
+    <div class="col l4"><span class="icon-design"></span><?php echo $lang->form->design; ?></div>
+    <div class="col l4"><span class="icon-icon"></span><?php echo $lang->form->logo; ?></div>
+  </div> -->
+
+  <div class="row">
+    <div class="col s12 m6 l6 offset-m4 offset-l4">
+      <div>
+        <div class="form-text"><?php echo $lang->form->inp1->text; ?></div>
+        <input type="text" id="name-user"/>
+      </div>
+    </div>
+    <div class="col s12 m6 l6 offset-m4 offset-l4">
+      <div>
+        <div class="form-text"><?php echo $lang->form->inp2->text; ?></div>
+        <input type="email" id="email-user"/>
+      </div>
+    </div>
+    <div class="col s12 m6 l6 offset-m4 offset-l4">
+      <div class="form-text"><?php echo $lang->form->select->text; ?></div>
+      <div class="select">
+         <a class="slct"><?php echo $lang->form->select->text; ?></a>
+           <ul class="drop">
+             <?php for ($i = 0; $i < count($lang->form->select->drop); $i++) {
+  ?>
+               <li><?php echo $lang->form->select->drop[$i]; ?></li>
+             <?php
 } ?>
-	           </ul>
-	         <input type="hidden" id="select" />
-        </div>
-        <div>
-          <div class="form-text"><?php echo $lang->form->txtarea->text; ?></div>
-          <textarea class="txtar" id="desc-user"></textarea>
-        </div>
-        <div>
-          <button type="button" class="submit" id="order"><?php echo $lang->form->button; ?></button>
-        </div>
+           </ul>
+         <input type="hidden" id="select" />
+      </div>
+    </div>
+    <div class="col s12 m6 l6 offset-m4 offset-l4">
+      <div>
+        <div class="form-text"><?php echo $lang->form->txtarea->text; ?></div>
+        <textarea class="txtar" id="desc-user"></textarea>
+      </div>
+    </div>
+    <div class="col s12 m4 l4 offset-m5 offset-l5">
+      <div>
+        <button type="button" class="submit" id="order"><?php echo $lang->form->button; ?></button>
       </div>
     </div>
   </div>
@@ -209,7 +229,6 @@
     </div>
 
   <script src="libs/jquery-3.2.1.min.js"></script>
-  <script src="libs/bootsrtap-grid/js/bootstrap.min.js"></script>
   <!-- <script src="libs/scrollbar/perfect-scrollbar.min.js"></script> -->
   <!-- <script src="libs/material/js/materialize.min.js"></script> -->
   <script src="libs/jquery.viewportchecker.min.js"></script>

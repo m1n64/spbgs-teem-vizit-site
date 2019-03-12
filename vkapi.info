@@ -1,6 +1,6 @@
-https://oauth.vk.com/authorize?client_id=6891830&display=page&redirect_uri=&scope=friends,status,wall,notify,notifications&response_type=token&v=5.52
+https://oauth.vk.com/authorize?client_id=6891830&display=page&redirect_uri=&scope=friends,status,wall,notify,notifications,offline&response_type=token&v=5.52
 https://oauth.vk.com/blank.html#access_token=965aebecd6f1fa19eca429b5083e6143b460a7140d73d819293e5345b0cff469d62cb92790b356245aeed&expires_in=86400&user_id=535058076
-<!-- 965aebecd6f1fa19eca429b5083e6143b460a7140d73d819293e5345b0cff469d62cb92790b356245aeed -->
+<!-- 79f3224391956046b80fab5078d861198afcc018a117dfb00acefe076498f8c79299d16ef4dfdbe162d10 -->
 
 
 https://oauth.vk.com/authorize?client_id=6891897&display=page&redirect_uri=&scope=friends,status,wall,notify,notifications&response_type=token&v=5.52
