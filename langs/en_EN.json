@@ -27,6 +27,9 @@
     "desc": "This web-site help You to find self in your life"
   },
     "form": {
+      "lend": "Create web-site or Landing page",
+      "design": "Services of designers and artists",
+      "logo": "Logo creation services",
       "name": "To order, fill out the form below:",
       "inp1": {
         "text": "Enter your name:"

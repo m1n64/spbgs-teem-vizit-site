@@ -1,5 +1,5 @@
 .navbar {
-  padding-top: 20%;
+  /* padding-top: 20%; */
   /* padding-bottom: 10%; */
   height: 87vh;
   font-family: 'Share Tech Mono', monospace;
@@ -7,10 +7,11 @@
 
 .glitch {
   color: white;
-  font-size: 150px;
+  font-size: 100px;
   position: relative;
-  width: 30%;
-  margin: 0 auto;
+  margin-top: 60%;
+  /* width: 30%; */
+  /* margin: 0 auto; */
 }
 /*
 .glitch:hover {
@@ -51,12 +52,12 @@
 }
 
 .icon-scroll:hover {
-  animation: 2s scrollhover infinite;
+  /* animation: 2s scrollhover infinite; */
   cursor: pointer;
 }
 
 .icon-scroll:not(:hover){
-  animation: 2s scrollnothover;
+  /* animation: 2s scrollnothover; */
 }
 
 .icon-scroll:active {
@@ -119,13 +120,23 @@
   background-color: #0e0e0e;
 }
 
+/* .row-team {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row-team > .col {
+  display: flex;
+} */
+
 .card-content {
   padding-top: 5%;
   padding-bottom: 100px;
   padding-left: 10px;
   /* display: table-row; */
+  /* position: relative; */
   width: 100%;
-  height: 100%;
+  height: 250px;
 }
 /* .card-content:hover { */
   /* transform: scale(1.05); */
@@ -156,7 +167,7 @@
 .card-name:hover {
   text-decoration: line-through;
   text-decoration-color: #3d0042;
-  cursor: default;
+  cursor: pointer;
 }
 
 .card-text {
@@ -247,8 +258,11 @@
 .form-card > div {
   margin-top: 3%;
 }
-.select {
+/* .select {
   margin-left: 31%;
+} */
+.drop {
+  z-index: 10;
 }
 
 .form-text {
@@ -274,7 +288,7 @@
   padding-top: 1%;
   color: rgb(134, 134, 134);
   font-family: RubikBold;
-  font-size: 0.5vw;
+  font-size: 0.7vw;
   /* padding-bottom: 10px; */
   text-align: right;
 }
@@ -327,8 +341,8 @@
   margin-top: 0;
 }
 
-@media all and (min-width: 992px) {
+@media all and (min-width: 600px) {
   .card-mg {
-    margin-top: 33px;
+    margin-top: 15px;
   }
 }
