@@ -30,7 +30,8 @@
     <meta name="yandex-tableau-widget" content="logo=pic/brick128.png, color=#202020" />
 
     <title><?php echo $lang->title; ?></title>
-
+    <meta name="description" content="BRICK - команда по созданию Web-сайтов или приложений. А так же мы оказываем услуги создания логотипов/дизайнов и так далее по самым низким ценам!">
+    <meta name="keywords" content="купить сайт,где купить сайт,купить интернет сайт, купить сайт онлайн,купить сайт магазин, купить сайт цена,купить логотип,купить логотип цена,услуги дизайнера,услуги дизайнера недорого,купить логотип цена,купить сайт недорого,купить логотип цена">
     <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
     <!-- <link rel="stylesheet" href="libs/material/css/materialize.min.css"> -->
     <link rel="stylesheet" href="libs/material-grid/materializecss-grid.min.css">
@@ -44,7 +45,13 @@
 
   </head>
   <body>
-    <div id="scrolltop"></div>
+    <!-- пытаемся наебать систему и заранжировать сайтецкий) как работают сео профессиОНАЛЫ)) -->
+    <div id="scrolltop">
+      <h1>Покупка сайтов</h1>
+      <h1>Нарисуем логотип</h1>
+      <h1>Создадим вам дизайн</h1>
+    </div>
+
     <div class="navbar">
       <div class="container">
         <div class="row">
