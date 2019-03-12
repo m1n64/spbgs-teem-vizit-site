@@ -22,7 +22,7 @@
     let sc = $(this).attr("for");
     $("#content-scroll").animate({
       opacity: 1
-    }, 500);
+    }, 600);
     $('html, body').animate({
       scrollTop: $(`${sc}`).offset().top
     }, 500);
@@ -36,12 +36,12 @@
 
   $("#project-list").viewportChecker({
     classToAdd: "animShow",
-    offset: 150
+    offset: 0
   });
 
   $("#get-site").viewportChecker({
     classToAdd: "animShow",
-    offset: 100
+    offset: 0
   })
 
   // Select

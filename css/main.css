@@ -34,12 +34,16 @@ body {
 }
 
 .animShow {
-  animation: 1s animVisible;
+  animation: 2s animVisible;
   animation-fill-mode: both;
 }
 
+#scrolltop {
+	display: none;
+}
+
 .animHide {
-  animation: 1s animInvisible;
+  animation: 2s animInvisible;
   animation-fill-mode: both;
 
 }
