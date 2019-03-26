@@ -49,24 +49,35 @@ body {
 }
 
 input {
-	width: 300px;
-	font-size: 13px;
-	padding: 6px 0 4px 10px;
-	border: 1px solid #57003e;
-	background: #7e7e7e;
-	border-radius: 8px;
-	font-family: RobotoBold;
+	 width: 300px;
+	 padding: 6px 0 4px 10px;
+	 background-color: rgba(134, 134, 134, 0.7);
+   border: 1px solid #57003e;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -khtml-border-radius: 10px;
+   outline: none;
+   font-size: 14px;
+   font-family: RobotoBold;
+}
+input:focus {
+  color: #000000;
+
 }
 
 /*	=	Select */
 .slct {
-	display: block;
-	border-radius: 5px;
+	display:flex;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -khtml-border-radius: 10px;
 	border: 1px solid #57003e;
-	background-color: #7e7e7e;
+	background-color: rgba(134, 134, 134, 0.7);
 	width: 285px;
 	padding: 4px 15px 4px 10px;
-	color: #ededed;
+	color: #000000;
 	background-position: 290px -145px;
 	font-family: RobotoBold;
 	cursor: pointer;
@@ -118,17 +129,17 @@ input {
 	cursor: pointer;
 	border: 2px solid #2a0022;
 	background: #7e7e7e;
-	/* box-shadow: inset 0px 20px 20px #ffffff; */
 	border-radius: 8px;
 	padding: 8px 14px;
 	color: #FFFFFF;
-	/* width: 120px; */
 	font-family: RobotoBold;
 	text-transform: uppercase;
-
+  outline: none;
+  transition: 0.3s all;
 }
 .submit:hover {
 	box-shadow: inset 0px -20px 20px #7e7e7e;
+  background: rgba(152, 29, 210, 0.8);
 }
 .submit:active {
 	margin-top: 1px;
@@ -139,18 +150,20 @@ input {
 textarea {
 	/* = Убираем скролл */
 	overflow: auto;
-
 	/* = Убираем увеличение */
 	resize: none;
 	width: 300px;
 	height: 100px;
-
-	/* = Добавим фон, рамку, отступ*/
-	background: #7e7e7e;
-	border: 1px solid #2a0022;
-	border-radius: 8px;
 	padding: 8px 0 8px 10px;
-	/* cursor: pointer; */
+  background-color: rgba(134, 134, 134, 0.7);
+  border: 1px solid #57003e;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+  font-family: RobotoBold;
 }
 
 body::selection, p::selection, div::selection, a::selection, span::selection {

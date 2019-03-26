@@ -68,8 +68,9 @@
       <div class="name-team">
         <span class="team-text"><?php echo $lang->teamname; ?></span>
       </div>
-      <!-- <div class="container-fluide"> -->
-      <div class="row row-team">
+
+      <div class="container-fluid">
+      <div class="row">
         <div class="col s12 m6 l4 card-mg">
           <div class="card-content" id="card1">
             <div class="card-head"><span class="card-icon icon-embed"></span><span class="card-name"><?php echo $lang->card1->name; ?></span></div>
@@ -126,6 +127,7 @@
     </div>
   <!-- </div> -->
 </div>
+</div>
 
 </div>
 
@@ -163,22 +165,18 @@
     <div class="col l4"><span class="icon-design"></span><?php echo $lang->form->design; ?></div>
     <div class="col l4"><span class="icon-icon"></span><?php echo $lang->form->logo; ?></div>
   </div> -->
-
+  <div class="container">
   <div class="row">
-    <div class="col s12 m6 l6 offset-m4 offset-l4">
-      <div>
-        <div class="form-text"><?php echo $lang->form->inp1->text; ?></div>
+    <div class="form-text"><?php echo $lang->form->inp1->text; ?></div>
+    <div class="our-input">
         <input type="text" id="name-user"/>
-      </div>
     </div>
-    <div class="col s12 m6 l6 offset-m4 offset-l4">
-      <div>
-        <div class="form-text"><?php echo $lang->form->inp2->text; ?></div>
+    <div class="form-text"><?php echo $lang->form->inp2->text; ?></div>
+    <div class="our-input">
         <input type="email" id="email-user"/>
       </div>
-    </div>
-    <div class="col s12 m6 l6 offset-m4 offset-l4">
       <div class="form-text"><?php echo $lang->form->select->text; ?></div>
+    <div class="our-input">
       <div class="select">
          <a class="slct"><?php echo $lang->form->select->text; ?></a>
            <ul class="drop">
@@ -191,17 +189,15 @@
          <input type="hidden" id="select" />
       </div>
     </div>
-    <div class="col s12 m6 l6 offset-m4 offset-l4">
-      <div>
-        <div class="form-text"><?php echo $lang->form->txtarea->text; ?></div>
+    <div class="form-text"><?php echo $lang->form->txtarea->text; ?></div>
+    <div class="our-input">
         <textarea class="txtar" id="desc-user"></textarea>
-      </div>
     </div>
-    <div class="col s12 m4 l4 offset-m5 offset-l5">
-      <div>
+    <div class="our-input">
         <button type="button" class="submit" id="order"><?php echo $lang->form->button; ?></button>
-      </div>
     </div>
+
+  </div>
   </div>
 </div>
 

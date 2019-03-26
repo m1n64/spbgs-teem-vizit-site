@@ -124,14 +124,7 @@
   background-color: #0e0e0e;
 }
 
-/* .row-team {
-  display: flex;
-  flex-wrap: wrap;
-}
 
-.row-team > .col {
-  display: flex;
-} */
 
 .card-content {
   padding-top: 5%;
@@ -272,7 +265,14 @@
 .form-text {
   color: rgb(255, 255, 255);
   font-family: RobotoBold;
+  text-align: center;
+}
 
+.our-input
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .vk {
@@ -342,7 +342,7 @@
 }
 
 .card-mg {
-  margin-top: 0;
+  margin-top: 5px;
 }
 
 @media all and (min-width: 600px) {
