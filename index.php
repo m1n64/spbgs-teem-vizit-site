@@ -28,10 +28,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#202020">
     <meta name="yandex-tableau-widget" content="logo=pic/brick128.png, color=#202020" />
+    <meta name="yandex-verification" content="fc998e1c835e2a17" />
 
     <title><?php echo $lang->title; ?></title>
     <meta name="description" content="BRICK - команда по созданию Web-сайтов или приложений. А так же мы оказываем услуги создания логотипов/дизайнов и так далее по самым низким ценам!">
-    <meta name="keywords" content="купить сайт,где купить сайт,купить интернет сайт, купить сайт онлайн,купить сайт магазин, купить сайт цена,купить логотип,купить логотип цена,услуги дизайнера,услуги дизайнера недорого,купить логотип цена,купить сайт недорого,купить логотип цена">
+    <meta name="keywords" content="brick,brickweb,brickweb.ru,заказать сайт,купить сайт,где купить сайт,купить интернет сайт, купить сайт онлайн,купить сайт магазин, купить сайт цена,купить логотип,купить логотип цена,услуги дизайнера,услуги дизайнера недорого,купить логотип цена,купить сайт недорого,купить логотип цена">
     <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
     <!-- <link rel="stylesheet" href="libs/material/css/materialize.min.css"> -->
     <link rel="stylesheet" href="libs/material-grid/materializecss-grid.min.css">
@@ -243,6 +244,8 @@
   <script src="libs/base64.js"></script>
   <script src="js/functions.js"></script>
   <script src="js/index.js"></script>
+
+  <script src="js/remove-fbclid.js" async defer></script>
   <!-- Yandex.Metrika counter -->
   <script type="text/javascript" >
      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
