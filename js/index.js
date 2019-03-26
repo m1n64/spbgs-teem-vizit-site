@@ -1,7 +1,8 @@
 (function() {
   // $('.sidenav').sidenav();
   //
-  $(window).on("load", function(){
+
+  $(window).on("load", function() {
     $('body').css("overflow", "scroll").css("overflow-x", "hidden");
     $('body, html').animate({
       scrollTop: 0
@@ -26,7 +27,7 @@
     $('html, body').animate({
       scrollTop: $(`${sc}`).offset().top
     }, 500);
-    $('body').css("overflow", "scroll").css("overflow-x", "hidden");//.css("background-image", "none").css("animation", "none");
+    $('body').css("overflow", "scroll").css("overflow-x", "hidden"); //.css("background-image", "none").css("animation", "none");
   });
 
   $(".lang_name").click(function() {
@@ -64,9 +65,9 @@
   });
 
   var wrap1 = $('#wrapper-ok'),
-      wrap2 = $("#wrapper-error"),
-       modal1 = $('.cover-ok, .modal-ok, .content-ok');
-       modal2 = $('.cover-error, .modal-error, .content-error');
+    wrap2 = $("#wrapper-error"),
+    modal1 = $('.cover-ok, .modal-ok, .content-ok');
+  modal2 = $('.cover-error, .modal-error, .content-error');
 
 
   $('.modal-ok').click(function() {
@@ -96,12 +97,12 @@
     pages: ["id94947434#Алёна", "spikuza#Стас", "pyrkh1#Никита", "powerofstrike#Антон", "spbg_grib#Иван"]
   }
 
-  $("#order").click(function(){
+  $("#order").click(function() {
     //modal1.fadeIn();
     let $name = $("#name-user"),
-        $email = $("#email-user"),
-        $select = $("#select"),
-        $desc = $("#desc-user");
+      $email = $("#email-user"),
+      $select = $("#select"),
+      $desc = $("#desc-user");
 
     if ($name.val().length == "" || $email.val().length == "" || $select.val().length == "" || $desc.val().length == "" || !isValidEmailAddress($email.val())) {
       modal2.fadeIn();
@@ -111,7 +112,7 @@
     let id = params.id_group;
 
     let users = "";
-    params.pages.forEach((el)=>{
+    params.pages.forEach((el) => {
       let spl = el.split('#');
       users += `*${spl[0]} (${spl[1]}) `;
     });
@@ -134,8 +135,7 @@
     });
 
     $.post(
-      location.protocol+"//"+location.host+"/ajax/mailto.ajax.php",
-      {
+      location.protocol + "//" + location.host + "/ajax/mailto.ajax.php", {
         mail: base64_encode($email.val())
       }
     );
