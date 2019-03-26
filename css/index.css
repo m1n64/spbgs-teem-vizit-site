@@ -3,15 +3,26 @@
   /* padding-bottom: 10%; */
   height: 87vh;
   font-family: 'Share Tech Mono', monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divider-scroll {
+  height: 13vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.divider-scroll>span {
+  font-size: 50px;
+  color: white;
 }
 
 .glitch {
   color: white;
   font-size: 100px;
   position: relative;
-  margin-top: 60%;
-  /* width: 30%; */
-  /* margin: 0 auto; */
 }
 /*
 .glitch:hover {
@@ -35,13 +46,6 @@
 
 .mini {
   font-size: 50px;
-}
-
-.divider-scroll {
-  height: 100px;
-  /* background-color: #48004e; */
-  text-align: center;
-  /* width: 100%; */
 }
 
 .icon-scroll {

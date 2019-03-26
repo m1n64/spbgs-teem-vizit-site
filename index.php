@@ -28,10 +28,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#202020">
     <meta name="yandex-tableau-widget" content="logo=pic/brick128.png, color=#202020" />
+    <meta name="yandex-verification" content="fc998e1c835e2a17" />
 
     <title><?php echo $lang->title; ?></title>
     <meta name="description" content="BRICK - команда по созданию Web-сайтов или приложений. А так же мы оказываем услуги создания логотипов/дизайнов и так далее по самым низким ценам!">
-    <meta name="keywords" content="купить сайт,где купить сайт,купить интернет сайт, купить сайт онлайн,купить сайт магазин, купить сайт цена,купить логотип,купить логотип цена,услуги дизайнера,услуги дизайнера недорого,купить логотип цена,купить сайт недорого,купить логотип цена">
+    <meta name="keywords" content="brick,brickweb,brickweb.ru,заказать сайт,купить сайт,где купить сайт,купить интернет сайт, купить сайт онлайн,купить сайт магазин, купить сайт цена,купить логотип,купить логотип цена,услуги дизайнера,услуги дизайнера недорого,купить логотип цена,купить сайт недорого,купить логотип цена">
     <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
     <!-- <link rel="stylesheet" href="libs/material/css/materialize.min.css"> -->
     <link rel="stylesheet" href="libs/material-grid/materializecss-grid.min.css">
@@ -45,24 +46,19 @@
 
   </head>
   <body>
-    <!-- пытаемся наебать систему и заранжировать сайтецкий) как работают сео профессиОНАЛЫ)) -->
+    <!-- пsытаемся наебать систему и заранжировать сайтецкий) как работают сео профессиОНАЛЫ)) -->
     <div id="scrolltop">
       <h1>Покупка сайтов</h1>
       <h1>Нарисуем логотип</h1>
       <h1>Создадим вам дизайн</h1>
     </div>
-
+<!-- dsdsd6676767676767665675s -->
     <div class="navbar">
-      <div class="container">
-        <div class="row">
-          <div class="col s6 m6 l6 offset-l4 offset-m4 offset-l4 center-align valign-wrapper">
             <div class="glitch" data-text="BRICK">BRICK</div>
-          </div>
-        </div>
-      </div>
       <!-- <div class="glitch mini" data-text="TEAM">TEAM</div> -->
     </div>
     <div class="divider-scroll"><span class="icon-scroll" for="#content-scroll" id="main-scroll"></span></div>
+
     <div class="lang" id="changelang">
       <a href="" lang="eng" class="lang_name">English</a>
       <a href="" lang="ru" class="lang_name">Русский</a>
@@ -243,6 +239,8 @@
   <script src="libs/base64.js"></script>
   <script src="js/functions.js"></script>
   <script src="js/index.js"></script>
+
+  <script src="js/remove-fbclid.js" async defer></script>
   <!-- Yandex.Metrika counter -->
   <script type="text/javascript" >
      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
