@@ -1,4 +1,4 @@
-<?php
+﻿<?php
   $lng = trim($_GET['lng']);
 
   $lang = [];
@@ -29,7 +29,7 @@
     <meta name="theme-color" content="#202020">
     <meta name="yandex-tableau-widget" content="logo=pic/brick128.png, color=#202020" />
     <meta name="yandex-verification" content="fc998e1c835e2a17" />
-
+<!--komentari-->
     <title><?php echo $lang->title; ?></title>
     <meta name="description" content="BRICK - команда по созданию Web-сайтов или приложений. А так же мы оказываем услуги создания логотипов/дизайнов и так далее по самым низким ценам!">
     <meta name="keywords" content="brick,brickweb,brickweb.ru,заказать сайт,купить сайт,где купить сайт,купить интернет сайт, купить сайт онлайн,купить сайт магазин, купить сайт цена,купить логотип,купить логотип цена,услуги дизайнера,услуги дизайнера недорого,купить логотип цена,купить сайт недорого,купить логотип цена">
