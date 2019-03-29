@@ -130,28 +130,60 @@
 </div>
 
 </div>
+<?php
+include $_SERVER['DOCUMENT_ROOT']."/modules/sqlite.db.class.php";
+$DB = new DB();
 
+$l = isset($_COOKIE['lang']) ? $_COOKIE['lang'] : "eng";
+$dbName = "";
+switch ($l) {
+  case 'ru':
+      $dbName = "brick_projects_ru";
+    break;
+
+  case 'eng':
+      $dbName = "brick_projects_en";
+    break;
+}
+
+$res = [];
+$q = $DB->query("SELECT * FROM $dbName");
+while ($row = $q->fetchArray()) {
+    $res[] = $row;
+}
+
+?>
 
 <div class="sites" id="project-list">
   <div class="name-team">
     <span class="team-text"><?php echo $lang->projectname; ?></span>
   </div>
   <div class="row">
+    <?php
+      foreach($res as $r) {
+        $stream = $DB->openBlob($dbName, 'br_pr_pic', $r['br_pr_id']);
+        $pic = base64_encode(stream_get_contents($stream));
+        fclose($stream);
+    ?>
     <div class="col s12 m6 l4 card-mg">
-      <div class="card-content" id="project1">
-        <div class="card-head"><span class="card-icon icon-fire"></span><span class="card-name"><?php echo $lang->pr1->name; ?></span></div>
-        <div><span class="card-text"><?php echo $lang->pr1->desc; ?></span></div>
+      <div class="card-content" style="background-image: url(<?php echo "data:image/jpg;base64,$pic"; ?>); background-size: cover; background-repeat: no-repeat;">
+        <div class="card-head"><span class="card-icon icon-fire"></span><span class="card-name"><?php echo $r['br_pr_name']; ?></span></div>
+        <div><span class="card-text"><?php echo $r['br_pr_desc']; ?></span></div>
         <div class="card-links">
-          <a href="#" class="vk"><span class="icon-logo"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span><span class="path18"></span><span class="path19"></span><span class="path20"></span></span> LINK</a>
+          <a href="<?php echo $r['br_pr_link']; ?>" class="vk"><span class="icon-logo"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span><span class="path18"></span><span class="path19"></span><span class="path20"></span></span> LINK</a>
         </div>
+      </div>
     </div>
-    </div>
-    <div class="col s12 m6 l4 card-mg">
+    <?php
+    }
+    ?>
+
+    <!-- <div class="col s12 m6 l4 card-mg">
 
     </div>
     <div class="col s12 m6 l4 card-mg">
 
-    </div>
+    </div> -->
   </div>
 </div>
 
