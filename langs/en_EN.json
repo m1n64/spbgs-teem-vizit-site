@@ -19,9 +19,27 @@
   },
   "card5": {
     "name": "Alena Zavatskaya",
-    "desc": "Best team leader and mastermind in our team."
+    "desc": "Best team leader and best tester"
   },
   "projectname": "Our projects:",
+  "aboutCard": {
+    "aboutTitle": "About us:",
+    "about": "We are a team that develops websites, logos and other things. Each of us has a lot of experience in the development or design. We will always be happy to work with you! ",
+    "info": "You can contact us via contact details or by filling out the form below.",
+    "contacts": {
+      "email": "support@brickweb.ru",
+      "phones": [
+        {
+          "name": "Stas",
+          "number": "+375291491996"
+        },
+        {
+          "name": "Kirill",
+          "number": "+375336692689"
+        }
+      ]
+    }
+  },
     "form": {
       "lend": "Create web-site or Landing page",
       "design": "Services of designers and artists",

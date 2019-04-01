@@ -19,6 +19,7 @@
         return json_decode(file_get_contents("{$_SERVER['DOCUMENT_ROOT']}/langs/ru_RU.json"));
     }
   }
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -187,6 +188,20 @@ while ($row = $q->fetchArray()) {
   </div>
 </div>
 
+<div class="about-us" id="aboutUs">
+    <div class="about-title"><?php echo $lang->aboutCard->aboutTitle; ?></div>
+    <div class="about"><?php echo $lang->aboutCard->about; ?></div>
+    <div class="about-info"><?php echo $lang->aboutCard->info; ?></div>
+    <div class="about-contacts">
+        <div class="about-email"><span class="line-hover">E-MAIL:</span> <?php echo $lang->aboutCard->contacts->email; ?></div>
+        <div class="about-phones">
+            <?php foreach ($lang->aboutCard->contacts->phones as $phone) {?>
+                <div class="about-phones"><span class="line-hover"><?php echo $phone->name; ?></span>: <?php echo $phone->number; ?> (Belarus)</div>
+            <?php } ?>
+        </div>
+    </div>
+</div>
+
 <div id="get-site">
   <div class="name-team">
     <span class="team-text"><?php echo $lang->form->name; ?></span>
@@ -212,9 +227,9 @@ while ($row = $q->fetchArray()) {
       <div class="select">
          <a class="slct"><?php echo $lang->form->select->text; ?></a>
            <ul class="drop">
-             <?php for ($i = 0; $i < count($lang->form->select->drop); $i++) {
+             <?php foreach($lang->form->select->drop as $drop) {
   ?>
-               <li><?php echo $lang->form->select->drop[$i]; ?></li>
+               <li><?php echo $drop; ?></li>
              <?php
 } ?>
            </ul>
