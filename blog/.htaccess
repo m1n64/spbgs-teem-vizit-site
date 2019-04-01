@@ -1,19 +1,13 @@
 Options All -Indexes
-<FilesMatch ".(info)$">
- Order Allow,Deny
- Deny from all
-</FilesMatch>
 
-<Directory /blog>
-    DirectoryIndex index.php
-</Directory>
+DirectoryIndex index.php
 
 RewriteEngine On
 Options +FollowSymlinks
 RewriteCond   %{REQUEST_FILENAME} !-d
 RewriteCond   %{REQUEST_FILENAME} !-f
 
-RewriteRule ^([a-z]*)?/$ index.php?lng=$1 [QSA,L]
+RewriteRule ^.$ index.php? [QSA]
 
 ErrorDocument 403 /error/403.html
 ErrorDocument 404 /error/404.html
