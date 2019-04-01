@@ -35,6 +35,11 @@
     setCookie("lang", "/", lang, 365);
   });
 
+  $("#aboutUs").viewportChecker({
+    classToAdd: "animShow",
+    offset: 0
+  });
+
   $("#project-list").viewportChecker({
     classToAdd: "animShow",
     offset: 0

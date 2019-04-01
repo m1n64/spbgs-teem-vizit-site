@@ -42,6 +42,12 @@ body {
 	display: none;
 }
 
+.line-hover:hover {
+  text-decoration: line-through;
+  text-decoration-color: #3d0042;
+  cursor: pointer;
+}
+
 .animHide {
   animation: 2s animInvisible;
   animation-fill-mode: both;

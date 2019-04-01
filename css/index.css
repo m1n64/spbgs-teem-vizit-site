@@ -52,7 +52,7 @@
   color: #dbdbdb;
   font-size: 100px;
   font-family: RobotoBold;
-  text-
+
 }
 
 .icon-scroll:hover {
@@ -113,18 +113,24 @@
 
 #project-list {
   opacity: 0;
-  margin-top: 5%;
+  /*margin-top: 0%;*/
+  padding-top: 1%;
+  padding-bottom: 1%;
+  /*background-color: rgb(13, 13, 13);*/
 }
 
 #get-site {
   opacity: 0;
-  margin-top: 4%;
+  /*margin-top: 4%;*/
   padding-top: 2%;
   padding-bottom: 6%;
-  background-color: #0e0e0e;
+  background-color: rgb(11, 11, 11);
 }
 
-
+#aboutUs {
+  background-color: #111111;
+  padding: 1% 0 2% 0;
+}
 
 .card-content {
   padding-top: 5%;
@@ -216,6 +222,8 @@
   background-repeat: no-repeat;
 }
 
+
+
 #card3 {
   background-image: url('../img/purh.jpg');
   background-size: cover;
@@ -262,8 +270,35 @@
   z-index: 10;
 }
 
+.about-us {
+  color: #ffffff;
+  font-family: RobotoBold;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+}
+
+.about-title {
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.about {
+  color: #bebebe;
+}
+
+.about-contacts {
+  padding-top: 10px;
+}
+
+.about-info {
+  color: #aaaaaa;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
 .form-text {
-  color: rgb(255, 255, 255);
+  color: #e6e6e6;
   font-family: RobotoBold;
   text-align: center;
 }
