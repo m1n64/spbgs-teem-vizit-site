@@ -4,10 +4,6 @@ Options All -Indexes
  Deny from all
 </FilesMatch>
 
-<Directory /blog>
-    DirectoryIndex index.php
-</Directory>
-
 RewriteEngine On
 Options +FollowSymlinks
 RewriteCond   %{REQUEST_FILENAME} !-d
