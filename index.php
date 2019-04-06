@@ -171,7 +171,7 @@ while ($row = $q->fetchArray()) {
         <div class="card-head"><span class="card-icon icon-fire"></span><span class="card-name"><?php echo $r['br_pr_name']; ?></span></div>
         <div><span class="card-text"><?php echo $r['br_pr_desc']; ?></span></div>
         <div class="card-links">
-          <a href="<?php echo $r['br_pr_link']; ?>" class="vk"><span class="icon-logo"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span><span class="path18"></span><span class="path19"></span><span class="path20"></span></span> LINK</a>
+          <a href="<?php echo $r['br_pr_link']; ?>" target="_blank" class="vk"><span class="icon-logo"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span><span class="path18"></span><span class="path19"></span><span class="path20"></span></span> LINK</a>
         </div>
       </div>
     </div>
