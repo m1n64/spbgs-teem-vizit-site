@@ -58,14 +58,24 @@
             <div class="glitch" data-text="BRICK">BRICK</div>
       <!-- <div class="glitch mini" data-text="TEAM">TEAM</div> -->
     </div>
-    <div class="divider-scroll"><span class="icon-scroll" for="#content-scroll" id="main-scroll"></span></div>
+    <div id="content-scroll"></div>
+    <div class="divider-scroll" for="#content-scroll" id="main-scroll"><span class="icon-scroll"></span>
+        <ul class="scroll-link">
+
+            <li class="link-scroll" for="#get-site">Order</li>
+            <li class="link-scroll" for="#aboutUs">About</li>
+            <li class="link-scroll" for="#project-list">Projects</li>
+            <li class="link-scroll" for="#content-main">Team</li>
+
+        </ul>
+    </div>
 
     <div class="lang" id="changelang">
       <a href="" lang="eng" class="lang_name">English</a>
       <a href="" lang="ru" class="lang_name">Русский</a>
     </div>
 
-    <div id="content-scroll">
+    <div id="content-main">
       <div class="name-team">
         <span class="team-text"><?php echo $lang->teamname; ?></span>
       </div>

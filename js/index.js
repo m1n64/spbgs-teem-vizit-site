@@ -8,10 +8,11 @@
       scrollTop: 0
     }, 500);
     $('body').css("overflow", "hidden");
+    $(".scroll-link").hide();
   });
 
   anime({
-    targets: ".divider-scroll",
+    targets: [".divider-scroll", ".main-scroll-fixed"],
     backgroundColor: ["#48004e", "#510058", "#3d0042", "#580060"], //["#e91e63", "#f44336", "#9575cd", "#00897b", "#a5d6a7", "#dce775", "#fff59d", "#ffcc80", "#ffab91"],
     duration: 50000,
     loop: true,
@@ -19,14 +20,28 @@
   });
 
   $("#main-scroll").click(function() {
+    $("#content-main").css("margin-top", "6%");
     let sc = $(this).attr("for");
-    $("#content-scroll").animate({
+    $(sc).animate({
       opacity: 1
     }, 600);
     $('html, body').animate({
-      scrollTop: $(`${sc}`).offset().top
+      scrollTop: $(`${sc}`).offset().top + 40
     }, 500);
+
     $('body').css("overflow", "scroll").css("overflow-x", "hidden"); //.css("background-image", "none").css("animation", "none");
+    $(this).addClass("main-scroll-fixed").removeClass("divider-scroll");
+    $(".icon-scroll").hide();
+    $(".scroll-link").show();
+
+  });
+
+  $(".link-scroll").click(function () {
+      $("#main-scroll").unbind("click");
+      let sc = $(this).attr("for");
+      $('html, body').animate({
+          scrollTop: $(`${sc}`).offset().top
+      }, 500);
   });
 
   $(".lang_name").click(function() {

@@ -13,6 +13,38 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+.main-scroll-fixed {
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  position: fixed;
+  z-index: 999999;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+ul.scroll-link li{
+  display: inline;
+
+}
+
+ul.scroll-link > li {
+  float: right;
+  margin-right: 25px;
+  margin-top: 10px;
+  color: #fcfcfc;
+  text-transform: uppercase;
+  font-family: RobotoBold;
+}
+ul.scroll-link > li:hover {
+  cursor: pointer;
+  text-decoration: line-through;
+  text-decoration-color: #3d0042;
+  line-height: 1em;
+  cursor: pointer;
+  color: #e5e5e5;
 }
 .divider-scroll>span {
   font-size: 50px;
