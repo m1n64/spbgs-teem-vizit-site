@@ -58,7 +58,7 @@
             <div class="glitch" data-text="BRICK">BRICK</div>
       <!-- <div class="glitch mini" data-text="TEAM">TEAM</div> -->
     </div>
-    <div class="divider-scroll"><span class="icon-scroll" for="#content-scroll" id="main-scroll"></span></div>
+    <div class="divider-scroll" for="#content-scroll" id="main-scroll"><span class="icon-scroll"></span></div>
 
     <div class="lang" id="changelang">
       <a href="" lang="eng" class="lang_name">English</a>
