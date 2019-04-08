@@ -1,0 +1,57 @@
+
+.main {
+    margin-top: 4%;
+    background-color: rgba(160, 255, 250, 0.27);
+    padding: 20px;
+}
+
+.caption {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+
+.edits {
+    font-size: 25px;
+    list-style-type: none; /* Убираем маркеры */
+    background-color: #91e5e5;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    padding: 5px 0 5px 15px;
+    border-radius: 10px;
+    color: #383d41;
+}
+
+#go {
+    text-align: center;
+}
+
+#error-msg {
+    color: #ff4d57;
+}
+
+.edits:hover {
+    background-color: #98a6ff;
+}
+
+.edits > span {
+    color: #4542ff;
+}
+
+.button {
+    color: #fff; /* цвет текста */
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    background: rgb(121, 150, 212); /* фон кнопки */
+    padding: .7em 1.5em; /* отступ от текста */
+    outline: none; /* убирать контур в Mozilla */
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+.button:hover {
+    background: rgb(155, 199, 232);
+}
+.button:active {
+    background: rgb(97, 105, 152);
+}
