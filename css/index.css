@@ -7,21 +7,40 @@
   align-items: center;
   justify-content: center;
 }
-
+.brick-logo>p
+{
+  color: white;
+  text-align: center;
+}
 .divider-scroll {
   height: 13vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.divider-scroll:hover {
+  cursor: pointer;
+}
+
 .divider-scroll>span {
   font-size: 50px;
   color: white;
   transition: 0.4s all;
 }
-.divider-scroll>span:hover {
-  color: black;
-  transform: rotate(-360deg);
+
+.divider-card {
+  height: 50px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.divider-card:hover {
+  cursor: pointer;
+}
+.divider-card>span {
+  font-size: 40px;
+  color: white;
+  transition: 0.4s all;
 }
 
 .glitch {
@@ -58,15 +77,6 @@
   font-size: 100px;
   font-family: RobotoBold;
 
-}
-
-.icon-scroll:hover {
-  /* animation: 2s scrollhover infinite; */
-  cursor: pointer;
-}
-
-.icon-scroll:not(:hover){
-  /* animation: 2s scrollnothover; */
 }
 
 .icon-scroll:active {
@@ -139,28 +149,29 @@
 
 .card-content {
   padding-top: 5%;
-  padding-bottom: 100px;
-  padding-left: 10px;
-  /* display: table-row; */
-  /* position: relative; */
   width: 100%;
-  height: 250px;
+  height: 350px;
 }
-/* .card-content:hover { */
-  /* transform: scale(1.05); */
-  /* animation: 0.5s scaleBlock; */
-  /* animation-fill-mode: both; */
-/* } */
+.center
+{
+  text-align: center;
+}
 
-.card-head {
+/*.card-head {
   padding-bottom: 100px;
-  /* text-align: center; */
 }
+*/
 
 .card-icon {
-  padding-right: 20px;
+  margin-right: 20px;
   color: #7d001e;
   font-size: 40px;
+}
+.card-icon-serv
+{
+  color: #7d001e;
+  font-size: 60px;
+  text-align: center;
 }
 
 .card-name {
@@ -169,7 +180,19 @@
   font-family: RobotoBold;
   font-weight: bold;
   text-transform: uppercase;
-
+}
+.card-back
+{
+  border-radius: 2px;
+  background-color: rgba(23, 23, 23, 0.7);
+  width: 100%;
+}
+.card-back-desc
+{
+  border-radius: 2px;
+  background-color: rgba(23, 23, 23, 0.7);
+  width: 100%;
+  margin-top: 100px;
 }
 
 .card-name:hover {
@@ -183,7 +206,7 @@
   text-align: justify;
   text-transform: uppercase;
   font-family: RobotoBold;
-  background-color: rgba(23, 23, 23, 0.5);
+  margin-top: 100px;
 }
 
 .name-team {
@@ -246,13 +269,22 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-
-#project1 {
-  background-image: url('../img/fy.jpg');
+#card6 {
+  background-image: url('../img/sayt-kluch.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
+#card7 {
+  background-image: url('../img/holst.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#card8 {
+  background-image: url('../img/code.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 
 .red {
   color: rgb(255, 0, 0);
@@ -332,9 +364,13 @@
   padding-top: 1%;
   color: rgb(134, 134, 134);
   font-family: RubikBold;
-  font-size: 0.7vw;
   /* padding-bottom: 10px; */
+  font-size: 13px;
   text-align: right;
+}
+.footer-text
+{
+  font-size: 11px;
 }
 .footer-copyright {
   background-color: #29002d;

@@ -173,5 +173,5 @@ textarea {
 }
 
 body::selection, p::selection, div::selection, a::selection, span::selection {
-	background-color: rgba(116, 0, 0, 0.5);
+	background-color: rgba(72, 0, 78, 0.5);
 }

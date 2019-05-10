@@ -20,6 +20,7 @@
     }
   }
 
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -45,6 +46,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/index.css">
 
+
   </head>
   <body>
     <!-- пsытаемся наебать систему и заранжировать сайтецкий) как работают сео профессиОНАЛЫ)) -->
@@ -55,7 +57,10 @@
     </div>
 <!-- dsdsd6676767676767665675s -->
     <div class="navbar">
+            <div class="brick-logo">
             <div class="glitch" data-text="BRICK">BRICK</div>
+            <p>Build your web with our help</p>
+            </div>
       <!-- <div class="glitch mini" data-text="TEAM">TEAM</div> -->
     </div>
     <div class="divider-scroll" for="#content-scroll" id="main-scroll"><span class="icon-scroll"></span></div>
@@ -65,7 +70,64 @@
       <a href="" lang="ru" class="lang_name">Русский</a>
     </div>
 
+
+<!--Туть делал наши услуги-->
     <div id="content-scroll">
+      <div class="name-team">
+        <span class="team-text">Наши услуги:</span>
+      </div>
+
+      <div class="container-fluid">
+      <div class="row">
+
+        <div class="col s12 m6 l4 card-mg">
+          <div class="card-content center" id="card6">
+            <span class="card-icon-serv icon-embed"></span>
+            <div class="card-head card-serv"><div class="card-back"><span class="card-name">Разработка сайтов под ключ</span></div></div>
+            <!-- <div class="divider-card"><span class="icon-scroll"></span></div> -->
+          </div>
+        </div>
+
+        <div class="col s12 m6 l4 card-mg">
+          <div class="card-content center" id="card7">
+            <span class="card-icon-serv icon-laptop"></span>
+            <div class="card-head card-serv"><div class="card-back"><span class="card-name">Разработка дизайна</span></div></div>
+            <!-- <div class="divider-card"><span class="icon-scroll"></span></div> -->
+          </div>
+        </div>
+
+        <div class="col s12 m6 l4 card-mg">
+          <div class="card-content center" id="card8">
+            <span class="card-icon-serv icon-power"></span>
+            <div class="card-head card-serv"><div class="card-back"><span class="card-name">Техническое обслуживание сайтов</span></div></div>
+            <!-- <div class="divider-card"><span class="icon-scroll"></span></div> -->
+          </div>
+        </div>
+
+    <div class="col s12 m6 l4 card-mg">
+      <!-- <div class="card-content" id="card6">
+        <div class="card-head"><span class="card-icon icon-fire red"></span><span class="card-name"><?php echo $lang->card6->name; ?></span></div>
+        <div><span class="card-text"><?php echo $lang->card6->desc; ?></span></div>
+        <div class="card-links">
+          <a href="#" class="vk"><span class="icon-vk"></span> VK</a>
+        </div>
+    </div> -->
+    </div>
+    <!-- </div> -->
+    </div>
+    </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <div id="">
       <div class="name-team">
         <span class="team-text"><?php echo $lang->teamname; ?></span>
       </div>
@@ -75,7 +137,7 @@
         <div class="col s12 m6 l4 card-mg">
           <div class="card-content" id="card1">
             <div class="card-head"><span class="card-icon icon-embed"></span><span class="card-name"><?php echo $lang->card1->name; ?></span></div>
-            <div><span class="card-text"><?php echo $lang->card1->desc; ?></span></div>
+            <div><div class="card-back-desc"><span class="card-text"><?php echo $lang->card1->desc; ?></span></div></div>
             <div class="card-links">
               <a href="https://vk.com/spbg_grib" class="vk"><span class="icon-vk"></span> VK</a>
             </div>
@@ -84,7 +146,7 @@
         <div class="col s12 m6 l4 card-mg">
           <div class="card-content" id="card2">
             <div class="card-head"><span class="card-icon icon-laptop"></span><span class="card-name"><?php echo $lang->card2->name; ?></span></div>
-            <div><span class="card-text"><?php echo $lang->card2->desc; ?></span></div>
+            <div><div class="card-back-desc"><span class="card-text"><?php echo $lang->card2->desc; ?></span></div></div>
             <div class="card-links">
               <a href="https://vk.com/spikuza" class="vk"><span class="icon-vk"></span> VK</a>
             </div>
@@ -93,7 +155,7 @@
         <div class="col s12 m6 l4 card-mg">
           <div class="card-content" id="card3">
             <div class="card-head"><span class="card-icon icon-power"></span><span class="card-name"><?php echo $lang->card3->name; ?></span></div>
-            <div><span class="card-text"><?php echo $lang->card3->desc; ?></span></div>
+            <div><div class="card-back-desc"><span class="card-text"><?php echo $lang->card3->desc; ?></span></div></div>
             <div class="card-links">
               <a href="https://vk.com/pyrkh1" class="vk"><span class="icon-vk"></span> VK</a>
             </div>
@@ -102,7 +164,7 @@
         <div class="col s12 m6 l4 card-mg">
           <div class="card-content" id="card4">
             <div class="card-head"><span class="card-icon icon-pencil2"></span><span class="card-name"><?php echo $lang->card4->name; ?></span></div>
-            <div><span class="card-text"><?php echo $lang->card4->desc; ?></span></div>
+            <div><div class="card-back-desc"><span class="card-text"><?php echo $lang->card4->desc; ?></span></div></div>
             <div class="card-links">
               <a href="https://vk.com/powerofstrike" class="vk"><span class="icon-vk"></span> VK</a>
             </div>
@@ -111,7 +173,7 @@
         <div class="col s12 m6 l4 card-mg">
           <div class="card-content" id="card5">
             <div class="card-head"><span class="card-icon icon-fire red"></span><span class="card-name"><?php echo $lang->card5->name; ?></span></div>
-            <div><span class="card-text"><?php echo $lang->card5->desc; ?></span></div>
+            <div><div class="card-back-desc"><span class="card-text"><?php echo $lang->card5->desc; ?></span></div></div>
             <div class="card-links">
               <a href="https://vk.com/id94947434" class="vk"><span class="icon-vk"></span> VK</a>
             </div>
@@ -169,7 +231,7 @@ while ($row = $q->fetchArray()) {
     <div class="col s12 m6 l4 card-mg">
       <div class="card-content" style="background-image: url(<?php echo "data:image/jpg;base64,$pic"; ?>); background-size: cover; background-repeat: no-repeat;">
         <div class="card-head"><span class="card-icon icon-fire"></span><span class="card-name"><?php echo $r['br_pr_name']; ?></span></div>
-        <div><span class="card-text"><?php echo $r['br_pr_desc']; ?></span></div>
+        <div><div class="card-back-desc"><span class="card-text"><?php echo $r['br_pr_desc']; ?></span></div></div>
         <div class="card-links">
           <a href="<?php echo $r['br_pr_link']; ?>" target="_blank" class="vk"><span class="icon-logo"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span><span class="path18"></span><span class="path19"></span><span class="path20"></span></span> LINK</a>
         </div>

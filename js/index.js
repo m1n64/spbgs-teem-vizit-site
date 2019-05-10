@@ -10,10 +10,34 @@
     $('body').css("overflow", "hidden");
   });
 
+
+//Пилил переворот стрэлочкы
+      $('#main-scroll').hover(function(){
+        $('.icon-scroll').css({
+          '-moz-transform':'rotate('+360+'deg)',
+          '-webkit-transform':'rotate('+360+'deg)',
+          '-o-transform':'rotate('+360+'deg)',
+          '-ms-transform':'rotate('+360+'deg)',
+          'transform': 'rotate('+360+'deg)',
+          'color': 'black'
+     })},
+     function(){
+       $('.icon-scroll').css({
+         '-moz-transform':'rotate('+0+'deg)',
+         '-webkit-transform':'rotate('+0+'deg)',
+         '-o-transform':'rotate('+0+'deg)',
+         '-ms-transform':'rotate('+0+'deg)',
+         'transform': 'rotate('+0+'deg)',
+         'color': 'white'})
+        }
+);
+
+
+
   anime({
     targets: ".divider-scroll",
     backgroundColor: ["#48004e", "#510058", "#3d0042", "#580060"], //["#e91e63", "#f44336", "#9575cd", "#00897b", "#a5d6a7", "#dce775", "#fff59d", "#ffcc80", "#ffab91"],
-    duration: 50000,
+    duration: 15000,
     loop: true,
     direction: 'alternate'
   });
