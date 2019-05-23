@@ -90,6 +90,7 @@
             </div>
           </div>
         </div>
+<!-- fowaugfaowufowa -->
         <div class="col s12 m6 l4 card-mg">
           <div class="card-content" id="card3">
             <div class="card-head"><span class="card-icon icon-power"></span><span class="card-name"><?php echo $lang->card3->name; ?></span></div>
