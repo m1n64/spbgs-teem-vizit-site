@@ -12,9 +12,11 @@
   function getLang($lng)
   {
       switch ($lng) {
-      default:
+      
       case "eng":
         return json_decode(file_get_contents("{$_SERVER['DOCUMENT_ROOT']}/langs/en_EN.json"));
+      
+      default:
       case "ru":
         return json_decode(file_get_contents("{$_SERVER['DOCUMENT_ROOT']}/langs/ru_RU.json"));
     }
